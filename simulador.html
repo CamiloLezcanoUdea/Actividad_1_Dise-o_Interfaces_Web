@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CreditSmart - Simulador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">CreditSmart</h1>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="simulador.html" aria-current="page">Simulador</a>
+        <a href="solicitar.html">Solicitar Crédito</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Simulador de créditos</h2>
+      <p>Busca por nombre o filtra por rango de monto (visual / estático para la actividad).</p>
+    </section>
+
+    <section class="sim-controls">
+      <label for="search">Buscar crédito:</label>
+      <input id="search" type="search" placeholder="Ej: vivienda, vehículo">
+
+      <label for="range">Rango de monto:</label>
+      <select id="range">
+        <option value="all">Todos</option>
+        <option value="0-2000000">Hasta $2.000.000</option>
+        <option value="2000000-10000000">$2.000.000 - $10.000.000</option>
+        <option value="10000000-100000000">Más de $10.000.000</option>
+      </select>
+
+      <button class="btn" aria-label="Aplicar filtro">Aplicar</button>
+    </section>
+
+    <section class="cards-grid" aria-live="polite">
+      <article class="card">
+        <div class="card-media" aria-hidden="true">
+          <svg width="80" height="80" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="4" fill="#e6f3ff"></rect>
+            <path d="M4 12h16M4 7h16M4 17h10" stroke="#0066cc" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3 class="product-name">Crédito Libre Inversión</h3>
+          <p class="rate">Tasa: <strong>14.5% anual</strong></p>
+          <p class="amount">Monto: <span>$1.000.000 - $30.000.000</span></p>
+          <p class="term">Plazo máximo: <span>60 meses</span></p>
+        </div>
+        <div class="card-actions">
+          <a class="btn" href="solicitar.html">Solicitar</a>
+          <a class="btn ghost" href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <svg width="80" height="80" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="4" fill="#fff4e6"></rect>
+            <path d="M3 12h18M6 16h12M8 8h8" stroke="#cc6600" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3 class="product-name">Crédito Vehículo</h3>
+          <p class="rate">Tasa: <strong>10.9% anual</strong></p>
+          <p class="amount">Monto: <span>$5.000.000 - $50.000.000</span></p>
+          <p class="term">Plazo máximo: <span>72 meses</span></p>
+        </div>
+        <div class="card-actions">
+          <a class="btn" href="solicitar.html">Solicitar</a>
+          <a class="btn ghost" href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <svg width="80" height="80" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="4" fill="#e8ffe6"></rect>
+            <path d="M3 12l9-7 9 7v7a1 1 0 0 1-1 1h-6v-5H10v5H4a1 1 0 0 1-1-1v-7z" stroke="#2d9b2d" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3 class="product-name">Crédito Vivienda</h3>
+          <p class="rate">Tasa: <strong>8.75% anual</strong></p>
+          <p class="amount">Monto: <span>$10.000.000 - $200.000.000</span></p>
+          <p class="term">Plazo máximo: <span>240 meses</span></p>
+        </div>
+        <div class="card-actions">
+          <a class="btn" href="solicitar.html">Solicitar</a>
+          <a class="btn ghost" href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <svg width="80" height="80" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="4" fill="#f3e6ff"></rect>
+            <path d="M4 19h16M12 3v10M6 7h12" stroke="#7a3fbf" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3 class="product-name">Crédito Educativo</h3>
+          <p class="rate">Tasa: <strong>6.0% anual</strong></p>
+          <p class="amount">Monto: <span>$500.000 - $20.000.000</span></p>
+          <p class="term">Plazo máximo: <span>96 meses</span></p>
+        </div>
+        <div class="card-actions">
+          <a class="btn" href="solicitar.html">Solicitar</a>
+          <a class="btn ghost" href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <svg width="80" height="80" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="4" fill="#fff6e6"></rect>
+            <path d="M4 20h16M4 10h16M10 4h4" stroke="#b36b00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3 class="product-name">Crédito Empresarial</h3>
+          <p class="rate">Tasa: <strong>12.2% anual</strong></p>
+          <p class="amount">Monto: <span>$10.000.000 - $500.000.000</span></p>
+          <p class="term">Plazo máximo: <span>120 meses</span></p>
+        </div>
+        <div class="card-actions">
+          <a class="btn" href="solicitar.html">Solicitar</a>
+          <a class="btn ghost" href="#">Ver detalles</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© CreditSmart - Simulador</p>
+    </div>
+  </footer>
+</body>
+</html>
