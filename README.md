@@ -1,6 +1,6 @@
 # Sistema Web de Gestión de Solicitudes de Crédito
 
-**Nombre del estudiante:** Tu Nombre Completo  
+**Nombre del estudiante:** Andres Camilo Lezcano
 **Curso:** Diseño de Interfaces Web  
 **Actividad:** Aplicar conceptos fundamentales de HTML5, CSS3 y diseño responsive  
 
@@ -55,6 +55,10 @@ Desde la carpeta del proyecto ejecuta en terminal:
 ```bash
 python -m http.server 5500
 
+## 📷 Capturas de pantalla
+
 ![Index - Desktop](./screenshots/index-desktop.png)
+
 ![Simulador - Mobile](./screenshots/simulador-mobile.png)
+
 ![Solicitar - Tablet](./screenshots/solicitar-credito.png)
