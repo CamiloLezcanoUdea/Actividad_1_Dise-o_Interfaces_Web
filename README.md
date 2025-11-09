@@ -48,17 +48,17 @@ El sistema está compuesto por tres páginas principales:
 3. Haz clic derecho en `index.html` → **Open with Live Server**.
 4. Se abrirá `http://127.0.0.1:5500/index.html` (o similar).
 
-### Opción C — Servidor HTTP simple (Python)
-Desde la carpeta del proyecto ejecuta en terminal:
-
-- Python 3:
-```bash
-python -m http.server 5500
-
-## 📷 Capturas de pantalla
+### 📷 Capturas de pantalla
 
 ![Index - Desktop](./screenshots/index-desktop.png)
 
 ![Simulador - Mobile](./screenshots/simulador-mobile.png)
 
 ![Solicitar - Tablet](./screenshots/solicitar-credito.png)
+
+### Opción C — Servidor HTTP simple (Python)
+Desde la carpeta del proyecto ejecuta en terminal:
+
+- Python 3:
+```bash
+python -m http.server 5500
