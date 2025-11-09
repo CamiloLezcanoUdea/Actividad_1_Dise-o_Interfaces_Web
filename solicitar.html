@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CreditSmart - Solicitar Crédito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">CreditSmart</h1>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="simulador.html">Simulador</a>
+        <a href="solicitar.html" aria-current="page">Solicitar Crédito</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section class="hero">
+      <h2>Formulario de solicitud</h2>
+      <p>Complete los datos solicitados para iniciar su proceso de solicitud de crédito.</p>
+    </section>
+
+    <form class="form-grid" action="#" method="post" novalidate aria-labelledby="form-title">
+      <h3 id="form-title" class="visually-hidden">Formulario de solicitud de crédito</h3>
+
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ej: Ana Pérez" required autocomplete="name">
+
+        <label for="identificacion">Tipo de documento</label>
+        <select id="identificacionTipo" name="identificacionTipo" required>
+          <option value="">-- Seleccione --</option>
+          <option value="cc">Cédula de ciudadanía</option>
+          <option value="ce">Cédula de extranjería</option>
+          <option value="ti">Tarjeta de identidad</option>
+          <option value="nit">NIT</option>
+        </select>
+
+        <label for="cedula">Número de documento</label>
+        <input id="cedula" name="cedula" type="text" inputmode="numeric" pattern="[0-9]{6,15}" placeholder="Solo números" required>
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" required autocomplete="email">
+
+        <label for="telefono">Teléfono / Celular</label>
+        <input id="telefono" name="telefono" type="tel" inputmode="tel" placeholder="3001234567" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos del crédito</legend>
+
+        <label for="tipo">Tipo de crédito</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">-- Seleccione --</option>
+          <option value="libre">Crédito Libre Inversión</option>
+          <option value="vehiculo">Crédito Vehículo</option>
+          <option value="vivienda">Crédito Vivienda</option>
+          <option value="educativo">Crédito Educativo</option>
+          <option value="empresarial">Crédito Empresarial</option>
+        </select>
+
+        <label for="monto">Monto solicitado (COP)</label>
+        <input id="monto" name="monto" type="number" min="100000" step="10000" placeholder="Ej: 1000000" required>
+
+        <label for="plazo">Plazo (meses)</label>
+        <select id="plazo" name="plazo" required>
+          <option value="">-- Seleccione --</option>
+          <option value="12">12</option>
+          <option value="24">24</option>
+          <option value="36">36</option>
+          <option value="48">48</option>
+          <option value="60">60</option>
+          <option value="96">96</option>
+          <option value="120">120</option>
+        </select>
+
+        <label for="destino">Destino del crédito (breve)</label>
+        <textarea id="destino" name="destino" rows="4" placeholder="Ej: Comprar vivienda / Remodelación / Capital de trabajo" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos laborales y financieros</legend>
+
+        <label for="empresa">Empresa / Empleador</label>
+        <input id="empresa" name="empresa" type="text" placeholder="Nombre de la empresa">
+
+        <label for="cargo">Cargo</label>
+        <input id="cargo" name="cargo" type="text" placeholder="Ej: Auxiliar administrativo">
+
+        <label for="ingresos">Ingresos mensuales (COP)</label>
+        <input id="ingresos" name="ingresos" type="number" min="0" step="10000" placeholder="Ej: 2000000">
+
+        <label for="estadoCivil">Estado civil</label>
+        <select id="estadoCivil" name="estadoCivil">
+          <option value="">-- Seleccione --</option>
+          <option value="soltero">Soltero(a)</option>
+          <option value="casado">Casado(a)</option>
+          <option value="union">Unión libre</option>
+          <option value="otro">Otro</option>
+        </select>
+      </fieldset>
+
+      <div class="form-actions" role="group" aria-label="Acciones del formulario">
+        <button class="btn" type="submit">Enviar Solicitud</button>
+        <button class="btn ghost" type="reset">Limpiar Formulario</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© CreditSmart - Solicitar Crédito</p>
+    </div>
+  </footer>
+</body>
+</html>
